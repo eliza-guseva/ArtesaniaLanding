@@ -1,4 +1,4 @@
-import { Route, Routes, Router } from 'react-router-dom';
+import { Route, Routes, Router, Navigate } from 'react-router-dom';
 import { useState } from 'react';
 import './App.css';
 import Footer from './components/Footer';
@@ -37,6 +37,8 @@ function App() {
           </Route >
           <Route path='/login' element={<Login />} />
           <Route path='/labeling' element={<IsAdmin> <Labeling /> </IsAdmin>} />
+          {/* Default route to redirect to Home */}
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         </Router>
       <Footer />
