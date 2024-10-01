@@ -26,10 +26,10 @@ const Navbar = ({ language, setLanguage}) => {
                     {language !== "en" && <Link href="#" onClick={() => handleSetLanguage("en")}>EN</Link>}
                     </div>  
                 </div>
-                <Link to={'/'}>Home</Link>
-                <Link to={'/demoinfo'}>Demo</Link>
-                {user && user.type === "admin" && <Link to={'/labeling'}>Labeling</Link>}
-                {<Link to={'/dashboard'}>Dashboard</Link>}
+                <Link to={'/ArtesaniaLanding'}>Home</Link>
+                <Link to={'/ArtesaniaLanding/demoinfo'}>Demo</Link>
+                {user && user.type === "admin" && <Link to={'/ArtesaniaLanding/labeling'}>Labeling</Link>}
+                {<Link to={'/ArtesaniaLanding/dashboard'}>Dashboard</Link>}
                 {user && <Link href="#" onClick={logOutUser}>Log out</Link>}
                 </div>
             </div>
