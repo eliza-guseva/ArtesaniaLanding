@@ -35,7 +35,6 @@ function App() {
           </Route >
           <Route path='/login' element={<Login />} />
           <Route path='/labeling' element={<IsAdmin> <Labeling /> </IsAdmin>} />
-          {/* Default route to redirect to Home */}
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         </BrowserRouter>
