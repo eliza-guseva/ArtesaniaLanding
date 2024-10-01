@@ -1,4 +1,4 @@
-import { Route, Routes, BrowserRouter, Navigate } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { useState } from 'react';
 import './App.css';
 import Footer from './components/Footer';
@@ -8,6 +8,7 @@ import Home from './pages/Home'
 import InfoDemo from './pages/InfoDemo'
 import Login from './pages/Login'
 import Demo from './pages/Demo';
+// import IsPrivate from './components/IsPrivate';
 import IsAdmin from './components/IsAdmin';
 import Dashboard from './pages/Dashboard';
 import BarChartView from './components/BarChartView';
@@ -21,13 +22,11 @@ function App() {
   return (
     <div className="App">
       <Navbar language={language} setLanguage={setLanguage} />
-      <BrowserRouter basename="/ArtesaniaLanding">
         <Routes>
           <Route path='/' element={<Home language={language} />} />
           <Route path='/demoinfo' element={<InfoDemo language={language} />} />
           <Route path='/demo' element={<Demo language={language} />} />
           <Route path='/dashboard' element={<Dashboard />} >
-            <Route path='/' element={<SliderChartView />} />
             <Route path='slider' element={<SliderChartView />} />
             <Route path='barChart' element={<BarChartView />} />
             <Route path='lineChart' element={<LinechartView />}  />
@@ -35,9 +34,7 @@ function App() {
           </Route >
           <Route path='/login' element={<Login />} />
           <Route path='/labeling' element={<IsAdmin> <Labeling /> </IsAdmin>} />
-          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
-        </BrowserRouter>
       <Footer />
     </div>
   );
