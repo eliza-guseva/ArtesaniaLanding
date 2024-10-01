@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/ArtesaniaLanding/static/css/main.c9c415d2.css",
-    "main.js": "/ArtesaniaLanding/static/js/main.6d1fb046.js",
+    "main.js": "/ArtesaniaLanding/static/js/main.c0a0d65c.js",
     "static/js/787.885faf2a.chunk.js": "/ArtesaniaLanding/static/js/787.885faf2a.chunk.js",
     "static/media/pexels-dmitry-zvolskiy-2253643.jpg": "/ArtesaniaLanding/static/media/pexels-dmitry-zvolskiy-2253643.1db3fe4e4f2dfa78358c.jpg",
     "static/media/pexels-andrea-piacquadio-3907080.jpg": "/ArtesaniaLanding/static/media/pexels-andrea-piacquadio-3907080.6d8d8e8fc1442771389e.jpg",
     "static/media/inprogress.jpeg": "/ArtesaniaLanding/static/media/inprogress.176b0d813933a2fc7611.jpeg",
     "index.html": "/ArtesaniaLanding/index.html",
     "main.c9c415d2.css.map": "/ArtesaniaLanding/static/css/main.c9c415d2.css.map",
-    "main.6d1fb046.js.map": "/ArtesaniaLanding/static/js/main.6d1fb046.js.map",
+    "main.c0a0d65c.js.map": "/ArtesaniaLanding/static/js/main.c0a0d65c.js.map",
     "787.885faf2a.chunk.js.map": "/ArtesaniaLanding/static/js/787.885faf2a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c9c415d2.css",
-    "static/js/main.6d1fb046.js"
+    "static/js/main.c0a0d65c.js"
   ]
 }
