@@ -8,7 +8,6 @@ import Home from './pages/Home'
 import InfoDemo from './pages/InfoDemo'
 import Login from './pages/Login'
 import Demo from './pages/Demo';
-// import IsPrivate from './components/IsPrivate';
 import IsAdmin from './components/IsAdmin';
 import Dashboard from './pages/Dashboard';
 import BarChartView from './components/BarChartView';
