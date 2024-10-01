@@ -23,7 +23,6 @@ function App() {
       <Navbar language={language} setLanguage={setLanguage} />
         <Routes>
           <Route path='/' element={<Home language={language} />} />
-          <Route path='/ArtesaniaLanding' element={<Home language={language} />} />
           <Route path='/demoinfo' element={<InfoDemo language={language} />} />
           <Route path='/demo' element={<Demo language={language} />} />
           <Route path='/dashboard' element={<Dashboard />} >
