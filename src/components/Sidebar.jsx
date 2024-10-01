@@ -14,17 +14,17 @@ export default function Sidebar() {
   const sections = [
     { 
       name: "Slider",
-      link: "/dashboard/slider",
+      link: "/ArtesaniaLanding/dashboard/slider",
       icon: <LuSlidersHorizontal  size={"2em"} color="black"/>
     },
     { 
       name: "Bar chart",
-      link: "/dashboard/barChart",
+      link: "/ArtesaniaLanding/dashboard/barChart",
       icon: <BsFillBarChartFill size={"2em"} color="black"/>
     },
     { 
       name: "Line chart",
-      link: "/dashboard/lineChart",
+      link: "/ArtesaniaLanding/dashboard/lineChart",
       icon: <BiLineChart size={"2em"} color="black"/>
     },
     // { 
