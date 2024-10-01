@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Router } from 'react-router-dom';
 import { useState } from 'react';
 import './App.css';
 import Footer from './components/Footer';
@@ -22,6 +22,7 @@ function App() {
   return (
     <div className="App">
       <Navbar language={language} setLanguage={setLanguage} />
+      <Router basename="/ArtesaniaLanding">
         <Routes>
           <Route path='/' element={<Home language={language} />} />
           <Route path='/ArtesaniaLanding' element={<Home language={language} />} />
@@ -37,6 +38,7 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/labeling' element={<IsAdmin> <Labeling /> </IsAdmin>} />
         </Routes>
+        </Router>
       <Footer />
     </div>
   );
