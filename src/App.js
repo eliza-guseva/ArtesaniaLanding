@@ -2,14 +2,10 @@ import { Route, Routes } from 'react-router-dom';
 import { useState } from 'react';
 import './App.css';
 import Footer from './components/Footer';
-import Labeling from './components/Labeling';
 import Navbar from './components/Navbar';
 import Home from './pages/Home'
 import InfoDemo from './pages/InfoDemo'
-import Login from './pages/Login'
 import Demo from './pages/Demo';
-// import IsPrivate from './components/IsPrivate';
-import IsAdmin from './components/IsAdmin';
 import Dashboard from './pages/Dashboard';
 import BarChartView from './components/BarChartView';
 import LinechartView from './components/LineChartView';
@@ -23,16 +19,15 @@ function App() {
     <div className="App">
       <Navbar language={language} setLanguage={setLanguage} />
         <Routes>
-          <Route path='/ArtesaniaLanding' element={<Home language={language} />} >
-            <Route path='demoinfo' element={<InfoDemo language={language} />} />
-            <Route path='demo' element={<Demo language={language} />} />
-            <Route path='dashboard' element={<Dashboard />} >
+          <Route path='/ArtesaniaLanding' element={<Home language={language} />} />
+            <Route path='/ArtesaniaLanding/demoinfo' element={<InfoDemo language={language} />} />
+            <Route path='/ArtesaniaLanding/demo' element={<Demo language={language} />} />
+            <Route path='/ArtesaniaLanding/dashboard' element={<Dashboard />} >
                 <Route path='slider' element={<SliderChartView />} />
                 <Route path='barChart' element={<BarChartView />} />
                 <Route path='lineChart' element={<LinechartView />}  />
                 {/* <Route path='map' /> */}
           </Route >
-          </Route>
         </Routes>
       <Footer />
     </div>
