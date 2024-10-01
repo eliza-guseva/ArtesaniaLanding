@@ -21,6 +21,7 @@ function App() {
   return (
     <div className="App">
       <Navbar language={language} setLanguage={setLanguage} />
+      <Router basename="/ArtesaniaLanding">
         <Routes>
           <Route path='/' element={<Home language={language} />} />
           <Route path='/demoinfo' element={<InfoDemo language={language} />} />
@@ -37,6 +38,7 @@ function App() {
           {/* Default route to redirect to Home */}
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
+        </Router>
       <Footer />
     </div>
   );
