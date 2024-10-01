@@ -16,7 +16,7 @@ const InfoDemo = ({ language }) => {
                     <p>Important! Please read.</p>
                     <p>If we have given you an username and password you can press the button on top to log in and see the early access demo.</p>
                     <p className="light-font">If you want to get credentials to see the demo, please write us in the contact mail</p>
-                    <Link to="/demo" className="orange-button">See the demo</Link>
+                    <Link to="/ArtesaniaLanding/demo" className="orange-button">See the demo</Link>
                 </div>}
                 {language === "ca" && <div className="demo-work">
                     {/* {!user && <Link to={'/login'} className="orange-button login">Log in</Link>} */}
@@ -25,7 +25,7 @@ const InfoDemo = ({ language }) => {
                     <p>Important! Si us plau, llegir.</p>
                     <p>Si us hem donat un username i una paraula de pas, podeu prémer el botó d'adalt per iniciar sessió i veure la demostració.</p>
                     <p className="light-font">Si voleu obtenir les credencials per veure la demostració, escriviu-nos al correu electrònic.</p>
-                    <Link to="/demo" className="orange-button">Veure la demo</Link>
+                    <Link to="/ArtesaniaLanding/demo" className="orange-button">Veure la demo</Link>
                 </div>}
                 {language === "es" && <div className="demo-work">
                     {/* {!user && <Link to={'/login'} className="orange-button login">Log in</Link>} */}
@@ -34,7 +34,7 @@ const InfoDemo = ({ language }) => {
                     <p>¡Importante! Por favor lea.</p>
                     <p>Si le hemos proporcionado un username y una contraseña, puede presionar el botón arriba para iniciar sesión y ver la demostración.</p>
                     <p className="light-font">Si desea obtener credenciales para ver la demostración, escríbanos en el correo electrónico.</p>
-                    <Link to="/demo" className="orange-button">Ver la demo</Link>
+                    <Link to="/ArtesaniaLanding/demo" className="orange-button">Ver la demo</Link>
                 </div>}
             </section>}                
         </>
