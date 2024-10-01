@@ -28,6 +28,7 @@ function App() {
           <Route path='/demoinfo' element={<InfoDemo language={language} />} />
           <Route path='/demo' element={<Demo language={language} />} />
           <Route path='/dashboard' element={<Dashboard />} >
+            <Route path='/' element={<SliderChartView />} />
             <Route path='slider' element={<SliderChartView />} />
             <Route path='barChart' element={<BarChartView />} />
             <Route path='lineChart' element={<LinechartView />}  />
